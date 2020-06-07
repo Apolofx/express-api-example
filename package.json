@@ -2,17 +2,18 @@
   "name": "heroku",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "engines": {
     "node": "12.x"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r dotenv/config ./src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "8.2.0",
     "nodemon": "2.0.4"
   },
   "dependencies": {
